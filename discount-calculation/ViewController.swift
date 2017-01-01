@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        priceField.text = "0"
+    }
 
     @IBAction func tap1Button(_ sender: Any) {
         let value = priceField.text! + "1"

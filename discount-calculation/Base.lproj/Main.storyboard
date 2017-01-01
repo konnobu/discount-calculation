@@ -123,6 +123,9 @@
                                 <rect key="frame" x="15" y="370" width="290" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="割引％を入力する"/>
+                                <connections>
+                                    <segue destination="S6n-tQ-2lV" kind="modal" id="KbX-Mq-bzD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E7V-u2-loJ">
                                 <rect key="frame" x="110" y="290" width="100" height="60"/>
@@ -142,6 +145,188 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86.25" y="154.52166666666665"/>
+        </scene>
+        <!--Percent View Controller-->
+        <scene sceneID="4ha-TB-ArH">
+            <objects>
+                <viewController id="S6n-tQ-2lV" customClass="PercentViewController" customModule="discount_calculation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMu-eH-Z9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="割引%を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mcy-4c-1iX">
+                                <rect key="frame" x="15" y="25" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="Cx8-9C-IvC">
+                                <rect key="frame" x="15" y="55" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vhl-N0-i0M">
+                                <rect key="frame" x="10" y="230" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="tap1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9PP-GY-Ciw"/>
+                                    <action selector="tap1Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="ONV-nr-nfc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Md9-9o-3cO">
+                                <rect key="frame" x="10" y="290" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="tap0Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="Hgh-5k-PQL"/>
+                                    <action selector="tap0Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJe-Nm-fm3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AUt-ff-0x3">
+                                <rect key="frame" x="10" y="170" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="tap4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRG-nH-ObY"/>
+                                    <action selector="tap4Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="pdx-BG-UDR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BpO-tt-TiB">
+                                <rect key="frame" x="10" y="110" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="tap7Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Km-d7-yN5"/>
+                                    <action selector="tap7Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="YJQ-13-WWy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AZN-6r-JQY">
+                                <rect key="frame" x="110" y="110" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="tap8Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="RLl-zx-zRc"/>
+                                    <action selector="tap8Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UE4-KF-H10"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XQm-9T-s20">
+                                <rect key="frame" x="210" y="110" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="tap9Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3B4-7f-K7b"/>
+                                    <action selector="tap9Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="w5E-Ka-8gD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vna-xE-HLc">
+                                <rect key="frame" x="110" y="170" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="tap5Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tQ-ku-2KI"/>
+                                    <action selector="tap5Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="mhS-CE-juh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ike-Qm-STI">
+                                <rect key="frame" x="210" y="170" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="tap6Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="3tk-8N-qtq"/>
+                                    <action selector="tap6Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Var-SD-uGh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nva-Tk-KSZ">
+                                <rect key="frame" x="110" y="230" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="tap2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vQ-Dq-lOk"/>
+                                    <action selector="tap2Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="mc5-Tw-G3b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BOM-gZ-Hjb">
+                                <rect key="frame" x="210" y="230" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="tap3Button:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="SoU-v4-spB"/>
+                                    <action selector="tap3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e9r-dP-BB2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oW6-ro-eP0">
+                                <rect key="frame" x="210" y="290" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="tapClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PtV-Ks-Sai"/>
+                                    <action selector="tapClearButton:" destination="S6n-tQ-2lV" eventType="touchUpInside" id="Wqr-Zy-gHZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JMh-nQ-QcU">
+                                <rect key="frame" x="15" y="370" width="290" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="計算する"/>
+                                <connections>
+                                    <segue destination="sWI-Ws-5an" kind="modal" id="HuA-1o-Em2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="percentField" destination="Cx8-9C-IvC" id="LWU-FW-xCv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5NT-Rj-BDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="154"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="3sY-zF-sPD">
+            <objects>
+                <viewController id="sWI-Ws-5an" customClass="ResultViewController" customModule="discount_calculation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLN-5R-e13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="計算結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E1I-oe-220">
+                                <rect key="frame" x="15" y="25" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="fll-lZ-o69">
+                                <rect key="frame" x="15" y="55" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nMs-48-Sgc">
+                                <rect key="frame" x="15" y="95" width="290" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="他の計算をする"/>
+                                <connections>
+                                    <segue destination="VNh-Cg-ONJ" kind="unwind" unwindAction="restart:" id="W4S-d4-Tga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultField" destination="fll-lZ-o69" id="q5w-xk-4ye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gi6-eh-AxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VNh-Cg-ONJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="154"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

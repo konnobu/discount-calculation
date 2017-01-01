@@ -12,6 +12,8 @@
 		99B6FC491E18A7B2002799EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B6FC471E18A7B2002799EF /* Main.storyboard */; };
 		99B6FC4B1E18A7B2002799EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B6FC4A1E18A7B2002799EF /* Assets.xcassets */; };
 		99B6FC4E1E18A7B2002799EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B6FC4C1E18A7B2002799EF /* LaunchScreen.storyboard */; };
+		99B6FC561E18B155002799EF /* PercentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6FC551E18B155002799EF /* PercentViewController.swift */; };
+		99B6FC5A1E18B5BD002799EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6FC591E18B5BD002799EF /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		99B6FC4A1E18A7B2002799EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99B6FC4D1E18A7B2002799EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99B6FC4F1E18A7B2002799EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B6FC551E18B155002799EF /* PercentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentViewController.swift; sourceTree = "<group>"; };
+		99B6FC591E18B5BD002799EF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 		99B6FC421E18A7B2002799EF /* discount-calculation */ = {
 			isa = PBXGroup;
 			children = (
+				99B6FC591E18B5BD002799EF /* ResultViewController.swift */,
 				99B6FC431E18A7B2002799EF /* AppDelegate.swift */,
 				99B6FC451E18A7B2002799EF /* ViewController.swift */,
 				99B6FC471E18A7B2002799EF /* Main.storyboard */,
+				99B6FC551E18B155002799EF /* PercentViewController.swift */,
 				99B6FC4A1E18A7B2002799EF /* Assets.xcassets */,
 				99B6FC4C1E18A7B2002799EF /* LaunchScreen.storyboard */,
 				99B6FC4F1E18A7B2002799EF /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				99B6FC461E18A7B2002799EF /* ViewController.swift in Sources */,
 				99B6FC441E18A7B2002799EF /* AppDelegate.swift in Sources */,
+				99B6FC561E18B155002799EF /* PercentViewController.swift in Sources */,
+				99B6FC5A1E18B5BD002799EF /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
