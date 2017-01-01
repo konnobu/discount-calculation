@@ -25,6 +25,17 @@ class ViewController: UIViewController {
     @IBAction func restart(_ segue: UIStoryboardSegue) {
         priceField.text = "0"
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 次の画面を取り出す
+        let viewController = segue.destination as! PercentViewController
+        
+        // 金額フィールドの文字列を数値に変換する
+        if let price = Int(priceField.text!) {
+            // 数値に変換した金額を次の画面に設定する
+            viewController.price = price
+        }
+    }
 
     @IBAction func tap1Button(_ sender: Any) {
         let value = priceField.text! + "1"

@@ -25,6 +25,17 @@ class PercentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 次の画面を取り出す
+        let viewController = segue.destination as! ResultViewController
+        
+        // 次の画面に現在保持している金額, パーセントを設定する
+        viewController.price = price
+        if let percent = Int(percentField.text!) {
+            viewController.percent = percent
+        }
+    }
+    
     
     @IBAction func tap1Button(_ sender: Any) {
         let value = percentField.text! + "1"
